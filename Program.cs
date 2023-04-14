@@ -1,21 +1,20 @@
-// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+// программа, которая принимает на вход пятизначное число и проверяет, читается ли строка одинакого с двух сторон
 
-//14212 -> нет
+//12312 -> нет
 
-//12821 -> да
-
-//23432 -> да
+//12321 -> да
 
 Console.WriteLine("Введите пятизначенное число");
-int number = Convert.ToInt32(Console.ReadLine());
-int a1 = Convert.ToInt32(Console.ReadLine());
-int b1 = Convert.ToInt32(Console.ReadLine());
-if(a1 == b1)
+string number = Console.ReadLine();
+//int a1 = int.Parse(Console.ReadLine());
+//int b1 = int.Parse(Console.ReadLine());
+
+if (number[0] == number[4] && number[1] == number[3])
 {
-    number = number / 10;
-    int a2 = number / 100;
-    int b2 = number % 10;
-    if(a2 == b2)
+    //number = number / 10;
+    //int a2 = number / 100;
+    //int b2 = number % 10;
+    //if (a2 == b2)
      Console.WriteLine("Число яляется палиндромом");
 }
    
